@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body>
+    <h1>Lista de Tarefas</h1>
+    <form>
+      <input type="text" id="taskName" placeholder="Nome da Tarefa">
+      <button type="button" onclick="addTask()">Adicionar</button>
+    </form>
+    <div>
+      <label>Filtrar:</label>
+      <input type="radio" name="filter" value="all" checked onclick="filterTask()"> Todas
+      <input type="radio" name="filter" value="complete" onclick="filterTask()"> Completas
+      <input type="radio" name="filter" value="incomplete" onclick="filterTask()"> Incompletas
+    </div>
+    <ul id="taskList">
+
+    </ul>
+    <script src="js/script.js"></script>
+  </body>
+</html>
